@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://habitatfornature.org/sitemap.xml
