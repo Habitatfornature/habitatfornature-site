@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Habitat for Nature Project</title>
+  <title>Habitat for Nature</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="Habitat for Nature - Reviving native wildlife on Bainbridge Island." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -21,331 +21,233 @@
       inset: 0;
       background: rgba(0,0,0,0.38);
     }
-
-    /* Impact section custom styles */
-    .impact-section {
-      background: #f7f8f5;
-      padding: 4rem 1.5rem;
-    }
-
-    .impact-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .impact-title {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-    }
-
-    .impact-subtitle {
-      font-size: 1rem;
-      color: #5f6b66;
-      max-width: 620px;
-      margin: 0 auto 2.5rem;
-    }
-
-    .impact-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 960px) {
-      .impact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 640px) {
-      .impact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .impact-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.75rem 1.5rem 2rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-    }
-
-    .impact-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    .impact-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 999px;
-      margin: 0 auto 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #0b7c4b;
-      background: rgba(11, 124, 75, 0.1);
-    }
-
-    .impact-card-title {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 0.6rem;
-    }
-
-    .impact-card-text {
-      font-size: 0.95rem;
-      line-height: 1.45;
-      color: #54605a;
-    }
-
-    .fade-in-up {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-
-    .fade-in-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity 0.45s ease, transform 0.45s ease;
-    }
   </style>
 </head>
 <body class="min-h-screen bg-neutral-50 text-neutral-900">
 
 <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-neutral-200">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-full bg-emerald-600 flex items-center justify-center text-white font-semibold text-lg shadow-sm">
-          H
-        </div>
-        <div class="flex flex-col leading-tight">
-          <span class="font-semibold text-neutral-900 text-sm sm:text-base">Habitat for Nature Project</span>
-          <span class="text-xs text-neutral-600 hidden sm:block">Reviving native wildlife on Bainbridge Island</span>
-        </div>
-      </a>
-      <nav class="flex items-center gap-4 sm:gap-6 text-sm font-medium text-neutral-700">
-        <a href="index.html" class="hover:text-emerald-700">Home</a>
-        <a href="mission.html" class="hover:text-emerald-700">Our mission</a>
-        <a href="impact.html" class="hover:text-emerald-700">Impact</a>
-        <a href="#get-involved" class="hidden sm:inline hover:text-emerald-700">Get involved</a>
-        <a href="https://www.youtube.com/@HabitatforNature/videos" target="_blank" rel="noopener noreferrer" class="hidden sm:inline hover:text-emerald-700">Videos</a>
-        <a href="https://www.paypal.com/donate/?business=7M5GKLN5Z99KQ&no_recurring=0&currency_code=USD" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-emerald-600 px-3 py-1.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-emerald-700">
-          Donate
-        </a>
-      </nav>
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-emerald-700 text-white font-bold tracking-wide">HfN</span>
+      <div class="leading-tight">
+        <div class="font-semibold text-lg">Habitat for Nature</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="#mission">Mission</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="#projects">Projects</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="#impact">Impact at a glance</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="impact.html">Why this matters</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="#get-involved">Get Involved</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="https://www.youtube.com/@HabitatforNature" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a class="text-sm font-medium text-neutral-700 hover:text-emerald-700 transition" href="#contact">Contact</a>
+      <a class="inline-flex items-center rounded-2xl px-4 py-2 text-sm font-semibold bg-emerald-700 text-white hover:bg-emerald-800 shadow-sm" href="https://www.paypal.com/donate/?hosted_button_id=M5ATM6GMQJE52">Donate</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-neutral-300 px-3 py-2 text-sm">
+      Menu
+    </button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden border-t border-neutral-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-3 grid gap-2">
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="#mission">Mission</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="#projects">Projects</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="#impact">Impact at a glance</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="impact.html">Why this matters</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="#get-involved">Get Involved</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="https://www.youtube.com/@HabitatforNature" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a class="block px-2 py-2 rounded-lg hover:bg-neutral-100" href="#contact">Contact</a>
+      <a class="block text-center px-4 py-2 rounded-xl font-semibold bg-emerald-700 text-white hover:bg-emerald-800" href="https://www.paypal.com/donate/?hosted_button_id=M5ATM6GMQJE52">Donate</a>
     </div>
   </div>
 </header>
 
-<main>
-  <!-- Hero Section -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-emerald-950 via-emerald-900 to-slate-950">
-    <div class="absolute inset-0 opacity-60">
-      <img src="images/shoreline-full-v3.jpg" alt="Bainbridge Island shoreline" class="w-full h-full object-cover" />
-    </div>
-    <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-emerald-950/70 to-slate-950/85"></div>
-
-    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
-      <div class="grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-10 lg:gap-12 items-center">
-        <div>
-          <div class="inline-flex items-center gap-2 rounded-full bg-emerald-900/80 px-3 py-1 text-xs font-medium text-emerald-100 ring-1 ring-emerald-500/50 mb-4">
-            <span class="inline-flex size-1.5 rounded-full bg-emerald-300 animate-pulse"></span>
-            Backyard to forest, one habitat at a time
-          </div>
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
-            Reviving native wildlife on Bainbridge Island
-          </h1>
-          <p class="text-sm sm:text-base lg:text-lg text-emerald-50/90 max-w-xl mb-8">
-            Habitat for Nature Project is restoring forest understory, songbird corridors and backyard to forest habitat so native species can return, feed and raise young again.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <a href="#impact" class="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600">
-              See our impact
-            </a>
-            <a href="#get-involved" class="inline-flex items-center rounded-full border border-emerald-300/80 bg-white/5 px-4 py-2 text-sm font-semibold text-emerald-50 hover:bg-white/10">
-              Help us help them
-            </a>
-          </div>
+<!-- Hero -->
+<section id="home" class="relative">
+  <img src="images/shoreline-full-v3.jpg?v=3" alt="shoreline with forested backdrop" class="w-full h-[90vh] md:h-[90vh] object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/10"></div>
+  <div class="absolute inset-0 flex items-end md:items-center">
+    <div class="max-w-6xl mx-auto w-full px-4 pb-8 md:pb-0">
+      <div class="max-w-2xl text-white">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight drop-shadow-sm">Reviving Native Wildlife</h1>
+        <div class="mt-6 md:mt-10 text-yellow-300 font-semibold leading-snug text-lg md:text-xl">
+          <div>Together we are restoring wildlife</div>
+          <div>and the habitats we depend upon</div>
         </div>
-
-        <div class="hidden lg:block">
-          <div class="rounded-2xl bg-black/30 border border-emerald-500/30 p-4 shadow-xl">
-            <div class="aspect-video rounded-xl overflow-hidden bg-black/40 border border-white/10 flex items-center justify-center">
-              <p class="text-emerald-50 text-xs px-4 text-center">
-                Watch native wildlife return - Douglas squirrels, songbirds and pollinators responding to restored habitat.
-              </p>
-            </div>
-            <div class="mt-4 flex items-center justify-between text-xs text-emerald-50/80">
-              <span>Filmed on Bainbridge Island</span>
-              <a href="https://www.youtube.com/@HabitatforNature/videos" target="_blank" rel="noopener noreferrer" class="underline decoration-emerald-300 underline-offset-2 hover:text-emerald-100">
-                View videos
-              </a>
-            </div>
-          </div>
+        <div class="mt-5 flex flex-wrap items-center gap-3">
+          <a class="inline-flex items-center rounded-2xl px-5 py-3 text-sm md:text-base font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md" href="https://www.paypal.com/donate/?hosted_button_id=M5ATM6GMQJE52">Donate to Restore Habitat</a>
+          <a class="inline-flex items-center rounded-2xl px-5 py-3 text-sm md:text-base font-semibold bg-white/90 hover:bg-white text-emerald-800" href="#projects">See Our Work</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Impact at a glance - new results based section -->
-  <section id="impact" class="impact-section">
-    <div class="impact-inner">
-      <h2 class="impact-title">Impact at a glance</h2>
-      <p class="impact-subtitle">
-        Real results from restoring food, water and shelter for native wildlife.
-      </p>
-
-      <div class="impact-grid">
-        <!-- Card 1 -->
-        <article class="impact-card fade-in-up">
-          <div class="impact-icon">
-            <span>7×</span>
-          </div>
-          <h3 class="impact-card-title">Increase in wildlife visits</h3>
-          <p class="impact-card-text">
-            Overall wildlife activity at our forest edges and feeding areas has grown more than seven fold.
-          </p>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="impact-card fade-in-up">
-          <div class="impact-icon">
-            <span>★</span>
-          </div>
-          <h3 class="impact-card-title">Native species returning</h3>
-          <p class="impact-card-text">
-            Douglas squirrels, Nuttall rabbits, Steller jays, frogs and many pollinators are now regular visitors again.
-          </p>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="impact-card fade-in-up">
-          <div class="impact-icon">
-            <span>☘</span>
-          </div>
-          <h3 class="impact-card-title">Soils coming back to life</h3>
-          <p class="impact-card-text">
-            Increased animal movement and natural litter are rebuilding healthy soil structure and ground cover.
-          </p>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="impact-card fade-in-up">
-          <div class="impact-icon">
-            <span>🌱</span>
-          </div>
-          <h3 class="impact-card-title">Habitat built since 1997</h3>
-          <p class="impact-card-text">
-            Thousands of trees, shrubs and edible plants now provide lasting food and shelter for wildlife.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Get involved section -->
-  <section id="get-involved" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid gap-10 md:grid-cols-2 items-start">
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-semibold mb-3">
-            Help us help them
-          </h2>
-          <p class="text-sm sm:text-base text-neutral-700 mb-4">
-            Your support keeps food, water and shelter in place every day of the year. Together we can expand restored habitat and document the return of native wildlife.
-          </p>
-          <ul class="text-sm text-neutral-700 space-y-2 mb-6">
-            <li> - Sponsor native plants and habitat improvements</li>
-            <li> - Help fund wildlife feed and fresh water year round</li>
-            <li> - Support cameras and field work that track real results</li>
-          </ul>
-          <div class="flex flex-wrap gap-3">
-            <a href="https://www.paypal.com/donate/?business=7M5GKLN5Z99KQ&no_recurring=0&currency_code=USD" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700">
-              Donate to restore habitat
-            </a>
-            <a href="mission.html" class="inline-flex items-center rounded-full border border-emerald-200 px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">
-              Learn about our mission
-            </a>
-          </div>
-        </div>
-
-        <div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-5">
-          <h3 class="text-sm font-semibold text-emerald-900 mb-2">
-            What your support makes possible
-          </h3>
-          <dl class="space-y-2 text-sm text-neutral-800">
-            <div class="flex justify-between">
-              <dt>Season of feed and water for small birds</dt>
-              <dd class="font-semibold text-emerald-800">$25 - $50</dd>
-            </div>
-            <div class="flex justify-between">
-              <dt>Native shrubs and understory plants</dt>
-              <dd class="font-semibold text-emerald-800">$50 - $150</dd>
-            </div>
-            <div class="flex justify-between">
-              <dt>Habitat camera and monitoring support</dt>
-              <dd class="font-semibold text-emerald-800">$150+</dd>
-            </div>
-          </dl>
-          <p class="mt-4 text-xs text-neutral-600">
-            Habitat for Nature Project is focused on measurable improvements in wildlife visitation, soil health and long term native plant cover on Bainbridge Island and in nearby forests.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="border-t border-neutral-200 bg-white">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-    <p class="text-xs text-neutral-600">
-      © <span id="year-span"></span> Habitat for Nature Project - Bainbridge Island, Washington
-    </p>
-    <div class="flex items-center gap-4 text-xs text-neutral-600">
-      <a href="https://www.youtube.com/@HabitatforNature/videos" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-700">
-        YouTube
-      </a>
-      <a href="mission.html" class="hover:text-emerald-700">Mission</a>
-      <a href="impact.html" class="hover:text-emerald-700">Impact</a>
     </div>
   </div>
+</section>
+
+<!-- Mission -->
+<section id="mission" class="mission-bg relative text-white">
+  <div class="mission-overlay absolute inset-0"></div>
+  <div class="relative max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-bold">Our Mission</h2>
+    <div class="mt-4 max-w-3xl space-y-3 text-base md:text-lg">
+      <p>We are a 501(c)(3) nonprofit organization dedicated to restoring and protecting native wildlife habitats on Bainbridge Island.</p>
+      <p>Our hands on approach focuses on reintroducing native trees, berries, vines, shrubs and hazelnuts to rebuild the food web and provide year round nourishment and shelter.</p>
+      <p>Through education, volunteer work and community support, we have revitalized our regional temperate forest and seen wildlife return.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-16 md:py-24 bg-neutral-100 border-y border-neutral-200">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold">Current Projects</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition">
+        <img alt="" class="w-full h-40 object-cover" src="images/douglas-squirrel.jpg" />
+        <div class="p-5">
+          <h3 class="font-semibold text-lg">Native Plant Expansion</h3>
+          <p class="mt-2 text-sm text-neutral-700">Adding serviceberry, salal, Oregon grape and hazelnut to bolster year round forage.</p>
+        </div>
+      </article>
+      <article class="rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition">
+        <img alt="" class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" />
+        <div class="p-5">
+          <h3 class="font-semibold text-lg">Water and Shelter</h3>
+          <p class="mt-2 text-sm text-neutral-700">Drippers, shallow basins and brush piles to support birds, squirrels and pollinators.</p>
+        </div>
+      </article>
+      <article class="rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-md transition">
+        <img alt="" class="w-full h-40 object-cover" src="https://images.unsplash.com/photo-1594972585338-b3486ba94f73?q=80&w=1200&auto=format&fit=crop" />
+        <div class="p-5">
+          <h3 class="font-semibold text-lg">Invasive Removal</h3>
+          <p class="mt-2 text-sm text-neutral-700">Removing ivy and Scotch broom and reestablishing native trees, fruit and nut bearing understory and ground cover.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Impact at a glance (on homepage) -->
+<section id="impact" class="py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold">Impact at a glance</h2>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+        <div class="text-2xl md:text-3xl font-extrabold text-emerald-700">+200%</div>
+        <div class="mt-1 text-sm text-neutral-700">Increase in bird visits</div>
+      </div>
+      <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+        <div class="text-2xl md:text-3xl font-extrabold text-emerald-700">18 mo</div>
+        <div class="mt-1 text-sm text-neutral-700">Project runtime</div>
+      </div>
+      <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+        <div class="text-2xl md:text-3xl font-extrabold text-emerald-700">50+</div>
+        <div class="mt-1 text-sm text-neutral-700">Native trees and shrubs</div>
+      </div>
+      <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+        <div class="text-2xl md:text-3xl font-extrabold text-emerald-700">365d</div>
+        <div class="mt-1 text-sm text-neutral-700">Water and feed provided</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Get involved -->
+<section id="get-involved" class="py-16 md:py-24 bg-neutral-100 border-y border-neutral-200">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 items-start">
+    <div class="md:col-span-2">
+      <h2 class="text-2xl md:text-3xl font-bold">Get involved</h2>
+      <p class="mt-4 text-lg text-neutral-800">
+        Help us help them. Every volunteer hour or small donation fuels forest renewal and brings our wildlife home.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="inline-flex items-center rounded-2xl px-5 py-3 font-semibold bg-emerald-700 text-white hover:bg-emerald-800 shadow" href="https://www.paypal.com/donate/?hosted_button_id=M5ATM6GMQJE52">Donate now</a>
+        <a class="inline-flex items-center rounded-2xl px-5 py-3 font-semibold border border-neutral-300 hover:bg-neutral-100" href="#contact">Volunteer / Contact</a>
+        <a class="inline-flex items-center rounded-2xl px-5 py-3 font-semibold border border-neutral-300 hover:bg-neutral-100" href="#updates">Watch videos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Updates -->
+<section id="updates" class="py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl md:text-3xl font-bold">Videos</h2>
+    <div class="mt-6 block rounded-2xl overflow-hidden border border-neutral-200 bg-white shadow-sm">
+      <div class="w-full bg-neutral-200 flex flex-col items-center justify-center">
+        <div class="w-full max-w-3xl aspect-video bg-black rounded-2xl overflow-hidden">
+          <video id="updatesVideo" class="w-full h-full" controls autoplay muted playsinline>
+            <source src="assets/videos/squirrels playing.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="mt-4 text-neutral-600 text-sm md:text-base text-center">
+          Visit our YouTube updates channel
+        </div>
+      </div>
+      <a class="block" href="https://www.youtube.com/@HabitatforNature/videos" target="_blank" rel="noopener noreferrer">
+        <div class="p-5 flex items-center justify-between">
+          <div>
+            <div class="font-semibold">Habitat for Nature on YouTube</div>
+            <div class="text-sm text-neutral-600">youtube.com/@HabitatforNature/videos</div>
+          </div>
+          <span class="inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold bg-emerald-700 text-white">
+            Open
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-16 md:py-24 bg-neutral-100 border-y border-neutral-200">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
+      <p class="mt-4 text-neutral-700">Questions, ideas, or want to collaborate beyond our shores? Send us a note.</p>
+      <form class="mt-6 grid gap-3" onsubmit="event.preventDefault(); alert('Thank you. This form can be wired to Netlify Forms or Formspree.');">
+        <input class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Your name" required type="text" />
+        <input class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="Email" required type="email" />
+        <textarea class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600" placeholder="How would you like to help?" required rows="5"></textarea>
+        <button class="inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold bg-emerald-700 text-white hover:bg-emerald-800">Send message</button>
+      </form>
+    </div>
+    <div class="rounded-2xl bg-white border border-neutral-200 p-6 shadow-sm">
+      <h3 class="font-semibold">Details</h3>
+      <dl class="mt-4 grid grid-cols-1 gap-3 text-sm">
+        <div>
+          <dt class="text-neutral-500">Status</dt>
+          <dd>501(c)(3) nonprofit</dd>
+        </div>
+        <div>
+          <dt class="text-neutral-500">Focus species</dt>
+          <dd>Douglas squirrel, songbirds, pollinators</dd>
+        </div>
+        <div>
+          <dt class="text-neutral-500">Email</dt>
+          <dd>habitatfornature@hotmail.com</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="py-10">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-600">© 2025 Habitat for Nature</div>
 </footer>
 
 <script>
-  // Impact card scroll in animation
-  document.addEventListener("DOMContentLoaded", function () {
-    var cards = document.querySelectorAll(".fade-in-up");
+  const btn = document.getElementById('menuBtn');
+  const mobile = document.getElementById('mobileNav');
+  if (btn && mobile) {
+    btn.addEventListener('click', () => mobile.classList.toggle('hidden'));
+  }
 
-    if ("IntersectionObserver" in window) {
-      var observer = new IntersectionObserver(function (entries, obs) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-
-      cards.forEach(function (card) {
-        observer.observe(card);
+  document.addEventListener('DOMContentLoaded', function () {
+    var vid = document.getElementById('updatesVideo');
+    if (vid) {
+      vid.addEventListener('click', function (event) {
+        event.stopPropagation();
       });
-    } else {
-      cards.forEach(function (card) {
-        card.classList.add("visible");
-      });
-    }
-
-    // Set footer year
-    var yearSpan = document.getElementById("year-span");
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
     }
   });
 </script>

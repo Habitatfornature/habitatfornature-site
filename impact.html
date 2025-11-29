@@ -1,162 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Impact | Habitat for Nature</title>
-  <meta name="description" content="A concise summary of Habitat for Nature's accomplishments and measurable outcomes.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0e1a12;
-      --card: #16261c;
-      --accent: #e6ff6b;
-      --muted: #a7b8ad;
-      --text: #f1f6f3;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg, #0b1710 0%, #0e1a12 100%);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    header {
-      padding: 16px 20px;
-      position: sticky; top: 0; backdrop-filter: blur(6px);
-      background: rgba(14,26,18,.75); border-bottom: 1px solid rgba(230,255,107,.12);
-    }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 18px; align-items: center; }
-    nav a {
-      text-decoration: none; color: var(--text); font-weight: 600; padding: 8px 12px; border-radius: 999px;
-    }
-    nav a.active, nav a:hover { background: rgba(230,255,107,.12); color: #f6ffd0; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
-    .page-title {
-      font-size: clamp(36px, 5vw, 56px);
-      margin: 16px 0 8px; letter-spacing: -0.5px;
-    }
-    .subtitle { color: var(--muted); max-width: 780px; }
-    .grid {
-      display: grid; gap: 18px;
-      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
-      margin-top: 28px;
-    }
-    .card {
-      background: var(--card); border: 1px solid rgba(230,255,107,.12);
-      border-radius: 18px; padding: 18px;
-      box-shadow: 0 10px 20px rgba(0,0,0,.25);
-    }
-    .kpi {
-      font-size: 38px; font-weight: 800; letter-spacing: -0.5px; margin: 2px 0 6px;
-    }
-    .kpi small { font-size: 14px; color: var(--muted); font-weight: 600; margin-left: 6px; }
-    .label { color: #dfe9e3; font-weight: 600; }
-    .list { margin: 8px 0 0 18px; }
-    .list li { margin: 6px 0; }
-    .pill {
-      display: inline-block; padding: 6px 10px; border-radius: 999px;
-      background: rgba(230,255,107,.12); color: #f6ffd0; font-weight: 700; font-size: 12px; letter-spacing: .4px;
-      border: 1px solid rgba(230,255,107,.22);
-    }
-    footer { color: var(--muted); text-align: center; margin-top: 50px; }
-    .note { font-size: 13px; color: var(--muted); margin-top: 8px; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why This Matters – Habitat for Nature</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a class="active" href="impact.html">Impact</a></li>
-        <li><a href="get-involved.html">Get Involved</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-neutral-50 text-neutral-900" style="font-family: 'Poppins', system-ui, -apple-system, sans-serif;">
 
-  <main class="container">
-    <span class="pill">Impact</span>
-    <h1 class="page-title">What Your Support Makes Possible</h1>
-    <p class="subtitle">
-      
-      All items below reflect on‑the‑ground work and field observations.
-    </p>
+  <!-- Hero -->
+  <section class="relative">
+    <img src="images/shoreline-full-v3.jpg" alt="Restored shoreline and forest" class="w-full h-[55vh] md:h-[60vh] object-cover" />
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="absolute inset-0 flex items-center">
+      <div class="max-w-4xl mx-auto px-4 text-white">
+        <h1 class="text-4xl md:text-5xl font-extrabold">Why This Matters</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl">
+          Restoring native forest habitat brings wildlife back, rebuilds the food web, and protects our island for future generations.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="grid" aria-label="Impact at a Glance">
-      <article class="card">
-        <div class="label">Wildlife Activity</div>
-        <div class="kpi">3× <small>increase</small></div>
-        <p class="note">Sustained rise in wildlife activity following multi‑year habitat renewal.</p>
-      </article>
+  <!-- Impact at a glance -->
+  <section class="py-16 bg-neutral-100 border-y border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Impact at a glance</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+          <div class="text-3xl font-extrabold text-emerald-700">3x</div>
+          <div class="mt-1 text-sm text-neutral-700">Increase in wildlife activity</div>
+        </div>
+        <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+          <div class="text-3xl font-extrabold text-emerald-700">50+</div>
+          <div class="mt-1 text-sm text-neutral-700">Native trees and shrubs restored</div>
+        </div>
+        <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+          <div class="text-3xl font-extrabold text-emerald-700">18 mo</div>
+          <div class="mt-1 text-sm text-neutral-700">Timeline for first recovery zone</div>
+        </div>
+        <div class="rounded-2xl bg-white border p-6 text-center shadow-sm">
+          <div class="text-3xl font-extrabold text-emerald-700">365d</div>
+          <div class="mt-1 text-sm text-neutral-700">Water and food support for wildlife</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <article class="card">
-        <div class="label">Pollinators</div>
-        <div class="kpi">Back &amp; thriving</div>
-        <ul class="list">
-          <li>Mason bees, butterflies, and hummingbirds observed seasonally</li>
-          <li>Expanded nectar sources via native berries and flowering shrubs</li>
-        </ul>
-      </article>
+  <!-- What restoration changes -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">What restoration changes</h2>
+      <p class="mt-4 max-w-3xl text-neutral-700">
+        When ivy, blackberry and Scotch broom take over, they choke out the native plants that birds, pollinators and small mammals depend on. 
+        By removing invasives, replanting native trees and shrubs, and providing water and shelter, we rebuild the forest structure that wildlife needs to survive.
+      </p>
+      <p class="mt-4 max-w-3xl text-neutral-700">
+        The result is a living food web again: seeds, nuts, insects, fungi and clean water that support everything from mason bees and frogs to owls and Douglas squirrels.
+      </p>
+    </div>
+  </section>
 
-      <article class="card">
-        <div class="label">Bioindicators</div>
-        <div class="kpi">Trending ↑</div>
-        <ul class="list">
-          <li>Worms, dragonflies, and frogs increasing year over year</li>
-          <li>Habitat improvements benefiting the endangered spotted frog</li>
-        </ul>
-      </article>
+  <!-- Species spotlight -->
+  <section class="py-16 bg-neutral-100 border-y border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Species spotlight: Douglas squirrel</h2>
+      <p class="mt-4 max-w-3xl text-neutral-700">
+        Douglas squirrels are small, active forest squirrels that help spread seeds and underground fungi. 
+        Their presence shows that there is enough food, cover and connected habitat for them to move through the forest.
+      </p>
+      <p class="mt-4 max-w-3xl text-neutral-700">
+        After clearing invasives and restoring native canopy and understory, Douglas squirrels have returned to our project area. 
+        Seeing them again is one of our clearest signs that restoration is working.
+      </p>
+    </div>
+  </section>
 
-      <article class="card">
-        <div class="label">Key Species Returning</div>
-        <div class="kpi">Confirmed</div>
-        <ul class="list">
-          <li>Douglas squirrel</li>
-          <li>Steller’s jay</li>
-          <li>Nuttall’s rabbit</li>
-        </ul>
-      </article>
+  <!-- Call to action -->
+  <section class="py-16 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Help expand the recovery zones</h2>
+      <p class="mt-4 max-w-3xl mx-auto text-neutral-700">
+        Your donation funds invasive removal, native plantings, wildlife water sources and monitoring so we can repeat this success in more parcels around the island.
+      </p>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=M5ATM6GMQJE52"
+         class="inline-flex items-center rounded-2xl px-6 py-3 mt-6 text-lg font-semibold bg-emerald-700 text-white hover:bg-emerald-800 shadow">
+        Donate now to restore habitat
+      </a>
+    </div>
+  </section>
 
-      <article class="card">
-        <div class="label">Native Planting</div>
-        <div class="kpi">Ongoing</div>
-        <ul class="list">
-          <li>Trees, berry vines, shrubs, and hazelnuts reintroduced</li>
-          <li>Year‑round food &amp; shelter rebuilding the local food web</li>
-        </ul>
-      </article>
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-600">
+      © 2025 Habitat for Nature
+    </div>
+  </footer>
 
-      <article class="card">
-        <div class="label">Community Action</div>
-        <div class="kpi">Growing</div>
-        <ul class="list">
-          <li>Volunteer hours and stewardship steadily increasing</li>
-          <li>Education &amp; outreach building long‑term resiliency</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="card" style="margin-top:24px" aria-label="Methodology & Notes">
-      <h2 style="margin: 6px 0 8px;">How we measure impact</h2>
-      <ul class="list">
-        <li>Field logs and seasonal observations from repeat survey points</li>
-        <li>Before/after habitat photos and species checklists</li>
-        <li>Simple pollinator counts and amphibian sightings in restored areas</li>
-      </ul>
-      <p class="note">Want to help collect data or share observations? Head to <a href="get-involved.html" style="color:#f6ffd0;">Get Involved</a>.</p>
-    </section>
-
-    <footer>
-      <p>&copy; <span id="year"></span> Habitat for Nature — 501(c)(3) nonprofit. All rights reserved.</p>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
